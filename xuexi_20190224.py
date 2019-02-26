@@ -17,7 +17,7 @@ class Xuexi():
         html_01=driver.page_source
         html_01=BeautifulSoup(html_01,"html.parser")
         html_01=html_01.find_all('a',{'target':'_blank'})
-        html_0=[]    #该变量为首页地址，第一个为习近平文汇，第二个为学习电视台
+        html_0=[]    #该变量为首页地址，第一个为文汇，第二个为学习电视台
         html_0.append(html_01[1]['href'])
         html_0.append(html_01[3]['href'])
         driver.quit()
